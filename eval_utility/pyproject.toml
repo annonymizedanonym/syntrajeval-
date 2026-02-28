@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "syntraj-utileval"
+version = "0.1.0"
+description = "Utility evaluation of spatial/temporal/semantic component for synthetic trajectory data"
+requires-python = ">=3.9"
+license = { file = "LICENSE" } # or: license = { text = "MIT" }
+keywords = ["trajectories", "mobility", "synthetic-data", "evaluation", "utility"]
+dependencies = ["numpy >=1.21",
+                "osmnx>=2.0.6",
+                "pandas >=2.0",
+                "pot >=0.9",
+                "scikit-learn >=1.2",
+                "scipy >=1.10",
+                "pyproj >=3.0",
+                "shapely >=2.0",
+                "hdbscan >=0.8",
+                ]
+
+[tool.setuptools.packages.find]
+include = ["syntraj_utileval*"]
+
+exclude = ["data*", "notebooks*", "scripts*", "docs*", "tests*"]
