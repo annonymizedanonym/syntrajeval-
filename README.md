@@ -21,41 +21,41 @@ Quickstart:
 
 # 1) Create a conda environment for training models or to conduct a utility evaluation
 
-cd models\lstm-trajgan
-conda activate venv_LSTM-TrajGAN_original  
-conda env create -f environement.yml
+cd models\lstm-trajgan\\
+conda activate venv_LSTM-TrajGAN_original\\  
+conda env create -f environement.yml\\
 
 # 2) Prepare Geolife (weekly shown; also supports daily/hourly) (use the env_UtilEval environement)
 
-cd Data/prep_geolife  
-python prep_geolife.py --dataset_temporal_aggregation weekly
+cd Data/prep_geolife\\
+python prep_geolife.py --dataset_temporal_aggregation weekly\\
 
 # 3) Split the data and train models (verify path to Data)
 
-cd ../../models/lstm-trajgan  
-conda env create -f environement.yml  
-conda activate venv_LSTM-TrajGAN_original  
-python split_data.py  
-python train.py
+cd ../../models/lstm-trajgan\\
+conda env create -f environement.yml\\
+conda activate venv_LSTM-TrajGAN_original\\
+python split_data.py\\
+python train.py\\
 
-cd ../exGAN  
-conda env create -f environement.yml
-conda activate venv_LSTM-TrajGAN_original
-python split_data.py
-python train.py
+cd ../exGAN\\
+conda env create -f environement.yml\\
+conda activate venv_LSTM-TrajGAN_original\\
+python split_data.py\\
+python train.py\\
 
 cd ../TrajGDM
-conda env create -f environement.yml
-conda activate venv_TrajGDM
+conda env create -f environement.yml\\
+conda activate venv_TrajGDM\\
 python process_data.py\\
 python runners/trainer.py
 
 # 4) Install and run utility evaluation
 
-cd ../../eval_utility
-conda env create -f environement.yml
-conda activate venv_UtilEval
+cd ../../eval_utility\\
+conda env create -f environement.yml\\
+conda activate venv_UtilEval\\
 pip install . # or: pip install -e .\\
-jupyter lab # open notebooks under eval_utility/Notebook
+jupyter lab # open notebooks under eval_utility/Notebook\\
 
 # 5) run privacy evaluation Notebooks
