@@ -44,11 +44,11 @@ conda activate venv_LSTM-TrajGAN_original<br>
 python split_data.py<br>
 python train.py<br>
 
-cd ../TrajGDM
+cd ../TrajGDM<br>
 conda env create -f environement.yml<br>
 conda activate venv_TrajGDM<br>
 python process_data.py<br>
-python runners/trainer.py
+python runners/trainer.py<br>
 
 # 4) Install and run utility evaluation
 
