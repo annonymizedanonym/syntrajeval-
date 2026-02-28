@@ -21,41 +21,41 @@ Quickstart:
 
 # 1) Create a conda environment for training models or to conduct a utility evaluation
 
-cd models\lstm-trajgan\\
-conda activate venv_LSTM-TrajGAN_original\\  
-conda env create -f environement.yml\\
+cd models\lstm-trajgan<br>
+conda activate venv_LSTM-TrajGAN_original<br>  
+conda env create -f environement.yml<br>
 
 # 2) Prepare Geolife (weekly shown; also supports daily/hourly) (use the env_UtilEval environement)
 
-cd Data/prep_geolife\\
-python prep_geolife.py --dataset_temporal_aggregation weekly\\
+cd Data/prep_geolife<br>
+python prep_geolife.py --dataset_temporal_aggregation weekly<br>
 
 # 3) Split the data and train models (verify path to Data)
 
-cd ../../models/lstm-trajgan\\
-conda env create -f environement.yml\\
-conda activate venv_LSTM-TrajGAN_original\\
-python split_data.py\\
-python train.py\\
+cd ../../models/lstm-trajgan<br>
+conda env create -f environement.yml<br>
+conda activate venv_LSTM-TrajGAN_original<br>
+python split_data.py<br>
+python train.py<br>
 
-cd ../exGAN\\
-conda env create -f environement.yml\\
-conda activate venv_LSTM-TrajGAN_original\\
-python split_data.py\\
-python train.py\\
+cd ../exGAN<br>
+conda env create -f environement.yml<br>
+conda activate venv_LSTM-TrajGAN_original<br>
+python split_data.py<br>
+python train.py<br>
 
 cd ../TrajGDM
-conda env create -f environement.yml\\
-conda activate venv_TrajGDM\\
-python process_data.py\\
+conda env create -f environement.yml<br>
+conda activate venv_TrajGDM<br>
+python process_data.py<br>
 python runners/trainer.py
 
 # 4) Install and run utility evaluation
 
-cd ../../eval_utility\\
-conda env create -f environement.yml\\
-conda activate venv_UtilEval\\
-pip install . # or: pip install -e .\\
-jupyter lab # open notebooks under eval_utility/Notebook\\
+cd ../../eval_utility<br>
+conda env create -f environement.yml<br>
+conda activate venv_UtilEval<br>
+pip install . # or: pip install -e .<br>
+jupyter lab # open notebooks under eval_utility/Notebook<br>
 
 # 5) run privacy evaluation Notebooks
