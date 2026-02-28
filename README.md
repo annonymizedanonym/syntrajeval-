@@ -21,7 +21,7 @@ Quickstart:
 
 # 1) Create a conda environment for training models or to conduct a utility evaluation
 
-cd folder  
+cd models\lstm-trajgan
 conda activate venv_LSTM-TrajGAN_original  
 conda env create -f environement.yml
 
@@ -47,7 +47,7 @@ python train.py
 cd ../TrajGDM
 conda env create -f environement.yml
 conda activate venv_TrajGDM
-python process_data.py
+python process_data.py\\
 python runners/trainer.py
 
 # 4) Install and run utility evaluation
@@ -55,7 +55,7 @@ python runners/trainer.py
 cd ../../eval_utility
 conda env create -f environement.yml
 conda activate venv_UtilEval
-pip install . # or: pip install -e .
+pip install . # or: pip install -e .\\
 jupyter lab # open notebooks under eval_utility/Notebook
 
 # 5) run privacy evaluation Notebooks
