@@ -8,7 +8,7 @@ This repository accompanies the submitted paper and provides:
   - Notebooks/caseAB.ipynb (to reproduce tables 2,3,9 and 10)
   - Notebooks/maup_sensitivity_analysis.ipynb (to reproduce table 7)
 - Privacy evaluation on LSTM-TrajGAN and exGAN via two notebooks (eval_privacy/).
-  - MIATrajGAN.ipynb executes our MIA attack on the LSTM-TrajGAN model
+  - MIATrajGAN.ipynb executes our MIA attack on the LSTM-TrajGAN model (make a folder named "params" inside the path you set for saving modes )
   - MIAexGAN.ipynb executes our MIA attack on the exGAN model
 
 This repository provides 3 environements for reproducibility:
