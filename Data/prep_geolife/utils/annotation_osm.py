@@ -38,10 +38,15 @@ def get_osm_tags(beijing_bbox: Tuple):
     all_pois = []
 
     for tag in tqdm(tags_list):
+        west, south, east, north = beijing_bbox
+
         pois = ox.features_from_bbox(
-            beijing_bbox, {tag: True}
-        )  # Download and process POI data from OpenStreetMap for Beijing.
-        # Fix invalid geometries
+            north=north,
+            south=south,
+            east=east,
+            west=west,
+            tags={tag: True}
+        )
         pois["geometry"] = pois["geometry"].buffer(0)
         pois = pois[pois.is_valid & ~pois.geometry.is_empty]
         all_pois.append(pois)

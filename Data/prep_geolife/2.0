@@ -1,0 +1,23 @@
+Looking in indexes: https://multirepo-oab.si.fr.intraorange/api/pypi/pypi-remote/simple, https://ORA621957:****@multirepo-oab.si.fr.intraorange/artifactory/api/pypi/pypi-fluxvision/simple
+Collecting osmnx==1.9.4
+  Downloading https://multirepo-oab.si.fr.intraorange/api/pypi/pypi-remote/packages/packages/71/59/92e878a9f22cd820d10e361685ca064facee93ebc50c7afc4e0a5cfe7759/osmnx-1.9.4-py3-none-any.whl (107 kB)
+Collecting geopandas==0.13.2
+  Downloading https://multirepo-oab.si.fr.intraorange/api/pypi/pypi-remote/packages/packages/cb/7b/2fb6ab376c78d2e60812ad0bf4b24889309d2aeb543f54efcd586c69907f/geopandas-0.13.2-py3-none-any.whl (1.1 MB)
+     ---------------------------------------- 1.1/1.1 MB 26.0 MB/s eta 0:00:00
+Collecting shapely
+  Downloading https://multirepo-oab.si.fr.intraorange/api/pypi/pypi-remote/packages/packages/7c/54/c1b7ca8286df3ba767a99e8c706ae2e793b7e443c474b0840f3b3f10d09a/shapely-2.0.7-cp38-cp38-win_amd64.whl (1.5 MB)
+     ---------------------------------------- 1.5/1.5 MB 25.4 MB/s eta 0:00:00
+Collecting networkx<3.4,>=2.5 (from osmnx==1.9.4)
+  Downloading https://multirepo-oab.si.fr.intraorange/api/pypi/pypi-remote/packages/packages/a8/05/9d4f9b78ead6b2661d6e8ea772e111fc4a9fbd866ad0c81906c11206b55e/networkx-3.1-py3-none-any.whl (2.1 MB)
+     ---------------------------------------- 2.1/2.1 MB 22.9 MB/s eta 0:00:00
+Collecting numpy<1.27,>=1.20 (from osmnx==1.9.4)
+  Downloading https://multirepo-oab.si.fr.intraorange/api/pypi/pypi-remote/packages/packages/69/65/0d47953afa0ad569d12de5f65d964321c208492064c38fe3b0b9744f8d44/numpy-1.24.4-cp38-cp38-win_amd64.whl (14.9 MB)
+     ---------------------------------------- 14.9/14.9 MB 20.8 MB/s eta 0:00:00
+Collecting pandas<2.3,>=1.1 (from osmnx==1.9.4)
+  Downloading https://multirepo-oab.si.fr.intraorange/api/pypi/pypi-remote/packages/packages/c3/6c/ea362eef61f05553aaf1a24b3e96b2d0603f5dc71a3bd35688a24ed88843/pandas-2.0.3-cp38-cp38-win_amd64.whl (10.8 MB)
+     ---------------------------------------- 10.8/10.8 MB 18.2 MB/s eta 0:00:00
+Collecting requests<2.33,>=2.27 (from osmnx==1.9.4)
+  Downloading https://multirepo-oab.si.fr.intraorange/api/pypi/pypi-remote/packages/packages/7c/e4/56027c4a6b4ae70ca9de302488c5ca95ad4a39e190093d6c1a8ace08341b/requests-2.32.4-py3-none-any.whl (64 kB)
+Collecting fiona>=1.8.19 (from geopandas==0.13.2)
+  Downloading https://multirepo-oab.si.fr.intraorange/api/pypi/pypi-remote/packages/packages/14/8c/2a68b897b007ae297e554a3e4f90ec7b9252a46e6108d390cacc2bd3ef05/fiona-1.10.1-cp38-cp38-win_amd64.whl (24.5 MB)
+     ----------                               6.3/24.5 MB 21.5 MB/s eta 0:00:01
